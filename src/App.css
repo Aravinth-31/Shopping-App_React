@@ -5,13 +5,16 @@
   height: 40vmin;
   pointer-events: none;
 }
-nav a button{
+nav li button{
   background-color: black;
   color: white;
   border: 0px;
   padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
+}
+#logOut,#userMail{
+  display: none;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
