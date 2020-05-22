@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Shopping-App/static/css/main.48b4d72c.chunk.css",
-    "main.js": "/Shopping-App/static/js/main.4969d74b.chunk.js",
-    "main.js.map": "/Shopping-App/static/js/main.4969d74b.chunk.js.map",
+    "main.css": "/Shopping-App/static/css/main.ebf6351c.chunk.css",
+    "main.js": "/Shopping-App/static/js/main.9833b50e.chunk.js",
+    "main.js.map": "/Shopping-App/static/js/main.9833b50e.chunk.js.map",
     "runtime-main.js": "/Shopping-App/static/js/runtime-main.ff4cd628.js",
     "runtime-main.js.map": "/Shopping-App/static/js/runtime-main.ff4cd628.js.map",
-    "static/js/2.dfaef308.chunk.js": "/Shopping-App/static/js/2.dfaef308.chunk.js",
-    "static/js/2.dfaef308.chunk.js.map": "/Shopping-App/static/js/2.dfaef308.chunk.js.map",
+    "static/js/2.37e62b92.chunk.js": "/Shopping-App/static/js/2.37e62b92.chunk.js",
+    "static/js/2.37e62b92.chunk.js.map": "/Shopping-App/static/js/2.37e62b92.chunk.js.map",
     "index.html": "/Shopping-App/index.html",
-    "precache-manifest.5911130724a3067cd4a1c13fbdd8b028.js": "/Shopping-App/precache-manifest.5911130724a3067cd4a1c13fbdd8b028.js",
+    "precache-manifest.3b711b5a29f60c97bfc78f9376da5a2d.js": "/Shopping-App/precache-manifest.3b711b5a29f60c97bfc78f9376da5a2d.js",
     "service-worker.js": "/Shopping-App/service-worker.js",
-    "static/css/main.48b4d72c.chunk.css.map": "/Shopping-App/static/css/main.48b4d72c.chunk.css.map",
-    "static/js/2.dfaef308.chunk.js.LICENSE.txt": "/Shopping-App/static/js/2.dfaef308.chunk.js.LICENSE.txt"
+    "static/css/main.ebf6351c.chunk.css.map": "/Shopping-App/static/css/main.ebf6351c.chunk.css.map",
+    "static/js/2.37e62b92.chunk.js.LICENSE.txt": "/Shopping-App/static/js/2.37e62b92.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ff4cd628.js",
-    "static/js/2.dfaef308.chunk.js",
-    "static/css/main.48b4d72c.chunk.css",
-    "static/js/main.4969d74b.chunk.js"
+    "static/js/2.37e62b92.chunk.js",
+    "static/css/main.ebf6351c.chunk.css",
+    "static/js/main.9833b50e.chunk.js"
   ]
 }
