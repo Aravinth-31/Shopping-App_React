@@ -19,6 +19,7 @@ class Product extends React.Component{
                 list.push({title:this.props.title,desc:this.props.desc,pro_img:this.props.pro_img});
                 obj.fav=list;
                 localStorage.setItem(id,JSON.stringify(obj));
+                alert("Product Added To Cart");
             }
             else
                 alert("Product Already In Cart");
