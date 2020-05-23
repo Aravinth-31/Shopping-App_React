@@ -13,7 +13,7 @@ nav li button{
   font-weight: bold;
   cursor: pointer;
 }
-#logOut,#userMail{
+#logOut,#userMail,#cart{
   display: none;
 }
 @media (prefers-reduced-motion: no-preference) {

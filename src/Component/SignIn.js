@@ -16,12 +16,12 @@ class SignIn extends React.Component{
             alert("Email Already Used");
         else{
             localStorage.setItem(this.state.email,JSON.stringify(this.state));
-            alert("Signed In");
             document.getElementById("logIn").style.display="none";
             document.getElementById("signIn").style.display="none";
             document.getElementById("logOut").style.display="block";
             document.getElementById("userMail").style.display="block";
             document.getElementById("userMail").innerHTML=this.state.email;
+            document.getElementById("cart").style.display='block';
             this.setState({
                 email:'',
                 npassword:'',

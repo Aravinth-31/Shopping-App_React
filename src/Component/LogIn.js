@@ -18,12 +18,12 @@ class LogIn extends React.Component{
         if(keys.includes(this.state.email)){
             var obj=JSON.parse(localStorage.getItem(this.state.email));
             if(obj.npassword === this.state.password){
-                alert("Logged In");
                 document.getElementById("logIn").style.display="none";
                 document.getElementById("signIn").style.display="none";
                 document.getElementById("logOut").style.display="block";
                 document.getElementById("userMail").style.display="block";
                 document.getElementById("userMail").innerHTML=this.state.email;
+                document.getElementById("cart").style.display='block';
                 this.setState({email:'',password:''});
             }
             else  

@@ -14,7 +14,9 @@ class Products extends Component {
         let list=[...this.state.productsInfo];
         var keys=Object.keys(localStorage),n=keys.length,i=n-1;
         while(i>=0){
-            list.push(JSON.parse(localStorage.getItem(keys[i])));
+            if(keys[i].match(/^product-/)){
+                list.push(JSON.parse(localStorage.getItem(keys[i])));
+            }
             i--;
         }
         this.setState({productsInfo:list});
