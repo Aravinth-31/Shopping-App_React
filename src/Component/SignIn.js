@@ -7,7 +7,8 @@ class SignIn extends React.Component{
             email:'',
             npassword:'',
             cpassword:'',
-            fav:[]
+            fav:[],
+            cart:[]
         }
     }
     signIn=()=>{

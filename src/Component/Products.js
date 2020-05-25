@@ -13,6 +13,8 @@ class Products extends Component {
     componentDidMount(){
         let list=[...this.state.productsInfo];
         var keys=Object.keys(localStorage),n=keys.length,i=n-1;
+        // var id=document.getElementById("userMail");
+        // var obj=localStorage.getItem(id)||{fav:[]}
         while(i>=0){
             if(keys[i].match(/^product-/)){
                 list.push(JSON.parse(localStorage.getItem(keys[i])));

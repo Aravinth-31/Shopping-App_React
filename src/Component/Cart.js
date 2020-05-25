@@ -8,8 +8,8 @@ class Cart extends React.Component{
     componentDidMount(){
         if (document.readyState === 'complete') {
             var id1=document.getElementById("userMail").innerHTML;
-            var obj1=JSON.parse(localStorage.getItem(id1))||{fav:[]};
-            this.setState({id:id1,obj:obj1.fav});
+            var obj1=JSON.parse(localStorage.getItem(id1))||{cart:[]};
+            this.setState({id:id1,obj:obj1.cart});
         }
     }
     render(){

@@ -3,16 +3,24 @@
     outline: 0;
     padding: 12px;
     color: white;
+    margin: 20px;
     background-color: #000;
     text-align: center;
     cursor: pointer;
     font-size: 18px;
 }
+.fav_img{
+    height: 100px;
+    width: 60px;
+    cursor: pointer;
+}		
+
 .footer {
 	position: relative;
 	left: 10;
 	bottom: 0;
-	padding: 10px;
+    padding: 10px;
+    display: flex;
 }
 .card {
     padding: 1%;
