@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Shopping-App/static/css/main.585537eb.chunk.css",
-    "main.js": "/Shopping-App/static/js/main.afc5c646.chunk.js",
-    "main.js.map": "/Shopping-App/static/js/main.afc5c646.chunk.js.map",
+    "main.js": "/Shopping-App/static/js/main.e030340f.chunk.js",
+    "main.js.map": "/Shopping-App/static/js/main.e030340f.chunk.js.map",
     "runtime-main.js": "/Shopping-App/static/js/runtime-main.ff4cd628.js",
     "runtime-main.js.map": "/Shopping-App/static/js/runtime-main.ff4cd628.js.map",
     "static/js/2.f209dad5.chunk.js": "/Shopping-App/static/js/2.f209dad5.chunk.js",
     "static/js/2.f209dad5.chunk.js.map": "/Shopping-App/static/js/2.f209dad5.chunk.js.map",
     "index.html": "/Shopping-App/index.html",
-    "precache-manifest.2af7ef748dedd7455128e0566dee86f3.js": "/Shopping-App/precache-manifest.2af7ef748dedd7455128e0566dee86f3.js",
+    "precache-manifest.d6b5503b652f50dce4fea8520f03be62.js": "/Shopping-App/precache-manifest.d6b5503b652f50dce4fea8520f03be62.js",
     "service-worker.js": "/Shopping-App/service-worker.js",
     "static/css/main.585537eb.chunk.css.map": "/Shopping-App/static/css/main.585537eb.chunk.css.map",
     "static/js/2.f209dad5.chunk.js.LICENSE.txt": "/Shopping-App/static/js/2.f209dad5.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ff4cd628.js",
     "static/js/2.f209dad5.chunk.js",
     "static/css/main.585537eb.chunk.css",
-    "static/js/main.afc5c646.chunk.js"
+    "static/js/main.e030340f.chunk.js"
   ]
 }
