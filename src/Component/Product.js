@@ -62,6 +62,29 @@ class Product extends React.Component{
             else
                 alert("Product Already In Cart");
         }
+        window.location.replace(window.location.href+'/');
+    }
+    removeCart=()=>{
+        var obj1=document.getElementById('userMail')
+        var id=obj1.innerHTML;
+        if(id==='')
+            alert("Log in First");
+        else{
+            let obj=JSON.parse(localStorage.getItem(id));
+            let list=obj.cart||[];
+            let list1=[];
+            for(var i=0;i<list.length;i++){
+                if(list[i].title===this.props.title)
+                    continue;
+                else{
+                    list1.push(list[i]);
+                }
+            }
+            obj.cart=list1;
+            localStorage.setItem(id,JSON.stringify(obj));
+            alert("Product Removed from Cart");
+            window.location.replace(window.location.href+'/');
+        }
     }
     checkFav=()=>{
         let obj1=document.getElementById('userMail')||{innerHTML:''};
@@ -76,42 +99,95 @@ class Product extends React.Component{
         }
         return f;
     }
+    checkCart=()=>{
+        let obj1=document.getElementById('userMail')||{innerHTML:''};
+        let id=obj1.innerHTML;
+        let obj=JSON.parse(localStorage.getItem(id))||{cart:[]};
+        let list=obj.cart,f=false;
+        for(var i=0;i<list.length;i++){
+            if(list[i].title===this.props.title){
+                f=true;
+                break;
+            }
+        }
+        return f;
+    }
     render(props){
-        if(this.checkFav()){
-            return (	
-                <div className="card">
-                    <div className="card-horizontal">
-                        <div className="img-square-wrapper">
-                            <img src={this.props.pro_img} alt="Loading"/>
-                        </div>
-                        <div className="card-body">
-                            <h2 className="card-title">{this.props.title}</h2><small>
-                            <h4 className="card-text">{this.props.desc}</h4></small>
-                            <div className="footer">
-                                <button onClick={this.addCart}>Add To Cart</button>
-                                <img onClick={this.favourite} className="fav_img" src="https://photos3.fotosearch.com/bthumb/CSP/CSP519/red-heart-clip-art__k20648489.jpg" alt="Favourite"/>
+        if(this.checkCart()){
+            if(this.checkFav()){
+                return (	
+                    <div className="card">
+                        <div className="card-horizontal">
+                            <div className="img-square-wrapper">
+                                <img src={this.props.pro_img} alt="Loading"/>
+                            </div>
+                            <div className="card-body">
+                                <h2 className="card-title">{this.props.title}</h2><small>
+                                <h4 className="card-text">{this.props.desc}</h4></small>
+                                <div className="footer">
+                                    <button onClick={this.removeCart}>Remove From Cart</button>
+                                    <img onClick={this.favourite} className="fav_img" src="https://photos3.fotosearch.com/bthumb/CSP/CSP519/red-heart-clip-art__k20648489.jpg" alt="Favourite"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>);
+                    </div>);
+            }
+            else{
+                return (	
+                    <div className="card">
+                        <div className="card-horizontal">
+                            <div className="img-square-wrapper">
+                                <img src={this.props.pro_img} alt="Loading"/>
+                            </div>
+                            <div className="card-body">
+                                <h2 className="card-title">{this.props.title}</h2><small>
+                                <h4 className="card-text">{this.props.desc}</h4></small>
+                                <div className="footer">
+                                    <button onClick={this.removeCart}>Remove from Cart</button>
+                                    <img onClick={this.favourite} className="fav_img" src="https://i.pinimg.com/originals/f2/bf/ba/f2bfbaf07b263d2ff6e417295e65abca.png" alt="Favourite"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>);
+            }
         }
         else{
-            return (	
-                <div className="card">
-                    <div className="card-horizontal">
-                        <div className="img-square-wrapper">
-                            <img src={this.props.pro_img} alt="Loading"/>
-                        </div>
-                        <div className="card-body">
-                            <h2 className="card-title">{this.props.title}</h2><small>
-                            <h4 className="card-text">{this.props.desc}</h4></small>
-                            <div className="footer">
-                                <button onClick={this.addCart}>Add To Cart</button>
-                                <img onClick={this.favourite} className="fav_img" src="https://i.pinimg.com/originals/f2/bf/ba/f2bfbaf07b263d2ff6e417295e65abca.png" alt="Favourite"/>
+            if(this.checkFav()){
+                return (	
+                    <div className="card">
+                        <div className="card-horizontal">
+                            <div className="img-square-wrapper">
+                                <img src={this.props.pro_img} alt="Loading"/>
+                            </div>
+                            <div className="card-body">
+                                <h2 className="card-title">{this.props.title}</h2><small>
+                                <h4 className="card-text">{this.props.desc}</h4></small>
+                                <div className="footer">
+                                    <button onClick={this.addCart}>Add To Cart</button>
+                                    <img onClick={this.favourite} className="fav_img" src="https://photos3.fotosearch.com/bthumb/CSP/CSP519/red-heart-clip-art__k20648489.jpg" alt="Favourite"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>);
+                    </div>);
+            }
+            else{
+                return (	
+                    <div className="card">
+                        <div className="card-horizontal">
+                            <div className="img-square-wrapper">
+                                <img src={this.props.pro_img} alt="Loading"/>
+                            </div>
+                            <div className="card-body">
+                                <h2 className="card-title">{this.props.title}</h2><small>
+                                <h4 className="card-text">{this.props.desc}</h4></small>
+                                <div className="footer">
+                                    <button onClick={this.addCart}>Add To Cart</button>
+                                    <img onClick={this.favourite} className="fav_img" src="https://i.pinimg.com/originals/f2/bf/ba/f2bfbaf07b263d2ff6e417295e65abca.png" alt="Favourite"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>);
+            }
         }
     }
 }
