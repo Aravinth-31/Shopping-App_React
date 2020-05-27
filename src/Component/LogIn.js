@@ -24,6 +24,7 @@ class LogIn extends React.Component{
                 document.getElementById("userMail").style.display="block";
                 document.getElementById("userMail").innerHTML=this.state.email;
                 document.getElementById("cart").style.display='block';
+                document.getElementById("favourite").style.display='block';
                 this.setState({email:'',password:''});
             }
             else  

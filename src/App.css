@@ -6,6 +6,7 @@
   pointer-events: none;
 }
 nav li button{
+  position: inherit;
   background-color: black;
   color: white;
   border: 0px;
@@ -13,7 +14,7 @@ nav li button{
   font-weight: bold;
   cursor: pointer;
 }
-#logOut,#userMail,#cart{
+#logOut,#userMail,#cart,#favourite{
   display: none;
 }
 @media (prefers-reduced-motion: no-preference) {
